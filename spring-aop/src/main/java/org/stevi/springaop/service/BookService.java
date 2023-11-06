@@ -1,6 +1,7 @@
-package org.stevi.service;
+package org.stevi.springaop.service;
 
-import org.stevi.annotation.NotLoggable;
+import org.springframework.stereotype.Service;
+import org.stevi.springaop.annotation.NotLoggable;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -10,6 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Simple service for demonstration purposes of AspectJ work.
  * All public method of the service will be loggable, except the one annotated with annotation @NotLoggable.
  */
+@Service
 public class BookService {
 
     private final AtomicInteger availableId = new AtomicInteger(0);

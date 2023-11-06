@@ -1,4 +1,4 @@
-package org.stevi.annotation;
+package org.stevi.springaop.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
